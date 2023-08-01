@@ -1,0 +1,2 @@
+
+db.createCollection( 'tag', {validator: {$jsonSchema: {bsonType: 'object',title:'tag',required: [         'name'],properties: {name: {bsonType: 'string', description:'this should be of type string and is required'},description: {bsonType: 'string', description:'this should be of type string and is optional'}}         }      }});  

@@ -1,0 +1,2 @@
+
+db.createCollection( 'subscription', {validator: {$jsonSchema: {bsonType: 'object',title:'subscription',required: [         'date_subscribed',          'user_subscribed',          'channel'],properties: {date_subscribed: {bsonType: 'timestamp', description:'this should be of type timestamp and is required'},user_subscribed: {bsonType: 'objectId', description:'this should be of type objectid and is required'},channel: {bsonType: 'objectId', description:'this should be of type objectid and is required'}}         }      }});  
