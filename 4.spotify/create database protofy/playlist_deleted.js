@@ -1,0 +1,2 @@
+
+db.createCollection( 'playlist_deleted', {validator: {$jsonSchema: {bsonType: 'object',title:'playlist_deleted',required: [         'date_deleted',          'playlist'],properties: {date_deleted: {bsonType: 'timestamp', description:'this should be of type timestamp and is required'},playlist: {bsonType: 'objectId', description:'this should be of type objectid and is required'}}         }      }});  

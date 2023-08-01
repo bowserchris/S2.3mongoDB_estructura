@@ -1,0 +1,2 @@
+
+db.createCollection( 'following', {validator: {$jsonSchema: {bsonType: 'object',title:'following',required: [         'user',          'artist'],properties: {user: {bsonType: 'objectId', description:'this should be of type objectid and is required'},artist: {bsonType: 'objectId', description:'this should be of type objectid and is required'}}         }      }});  

@@ -1,0 +1,2 @@
+
+db.createCollection( 'song', {validator: {$jsonSchema: {bsonType: 'object',title:'song',required: [         'album',          'title',          'duration'],properties: {album: {bsonType: 'objectId', description:'this should be of type objectid and is required'},title: {bsonType: 'string', description:'this should be of type string and is required'},duration: {bsonType: 'timestamp', description:'this should be of type timestamp and is required'},number_times_played: {bsonType: 'long', description:'this should be of type long and is required'}}         }      }});  
